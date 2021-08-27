@@ -93,6 +93,17 @@ h6 {
 
 .inner-to-action {
     max-width: 545px;
+    position: relative;
+}
+
+.inner-to-action::after {
+    content: '';
+    width: 738px;
+    height: 611px;
+    background: url('../img/inner-bg.png') no-repeat;
+    position: absolute;
+    top: -95px;
+    right: -655px;
 }
 
 .title-to-action {
@@ -101,6 +112,8 @@ h6 {
     color: #fff;
     line-height: 1.29;
     margin-top: 55px;
+    position: relative;
+    z-index: 1;
 }
 
 .description-to-action {
